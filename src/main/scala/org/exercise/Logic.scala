@@ -11,6 +11,9 @@ object Logic {
 
   type ParsingResult = Either[ParsingError, Triangle]
 
+  /*
+    Parses a sequence of lines into a Triangle or returns a ParsingError value if something went wrong.
+   */
   def triangleFromRowStrings(rowStrings: Seq[String]): ParsingResult = {
 
     //We exit here with a error value as there is no point doing anything further
